@@ -12,8 +12,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
- * @author eveli
+ * Clase de test
+ * @author Evelyn Guzman
  */
 public class PalindromeTest {
     
@@ -41,12 +41,14 @@ public class PalindromeTest {
      */
     @Test
     public void testIsPalindrome() {
+        
         System.out.println("isPalindrome");
-        String phrase = "La ruta natural";
-        boolean expResult = true;
+        String phrase = "662616";
+        boolean expResult = false;
         boolean result = Palindrome.isPalindrome(phrase);
         assertEquals(expResult, result);
-        
+       
+        }
     }
     
-}
+

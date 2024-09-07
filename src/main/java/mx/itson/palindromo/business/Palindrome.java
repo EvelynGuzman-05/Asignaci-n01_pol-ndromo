@@ -19,13 +19,23 @@ public class Palindrome {
      * @return Retorna true si es políndromo y false si no lo es.
      */
       public static boolean isPalindrome(String phrase) {
-        String textNew = phrase.replaceAll("[^a-zA-Z]", "").toLowerCase();;
+        
+        try{
+           
+        String textN = phrase.replaceAll("[^a-zA-Z]", "");
+        String textNew = phrase.toLowerCase();
         String textReversed = new StringBuilder(textNew).reverse().toString();
         return textNew.equals(textReversed);
-
-    }
-
-    }
+          }
+        catch(Exception ex){
+            System.err.print("Ocurrió un error: " + ex.getMessage());
+             return false;
+        }
+      }
+}
+      
+        
+    
 
 
 
